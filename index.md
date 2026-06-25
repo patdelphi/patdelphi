@@ -10,3 +10,5 @@ nav_order: 2
 
 ### 🚀 快速导航
 请通过左侧的目录树浏览我的笔记。
+
+如需联系，请邮件至： <patdelphi@gmail.com>  or  <patdelphi@qq.com>
