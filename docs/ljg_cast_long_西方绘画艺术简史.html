@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西方绘画艺术简史</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBF9F1;
+    --accent: #6B4E3D;
+    --text: #333;
+    --text-light: #666;
+    --text-dark: #1a1a1a;
+  }
+  
+  body {
+    background-color: var(--bg);
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card-container {
+    width: 1080px;
+    padding: 60px 50px 40px;
+    box-sizing: border-box;
+  }
+  
+  .title-area {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--accent);
+  }
+  
+  .title-area h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--text-dark);
+    margin: 0 0 12px 0;
+  }
+  
+  .subtitle {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 16px;
+    color: var(--text-light);
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+  
+  .era-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 44px 0 16px 0;
+    padding-left: 16px;
+    border-left: 4px solid var(--accent);
+    line-height: 1.3;
+  }
+  
+  .era-num {
+    font-family: 'Crimson Pro', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--accent);
+    opacity: 0.5;
+    margin-right: 8px;
+  }
+  
+  .period {
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    color: var(--accent);
+    font-style: italic;
+    margin: 4px 0 24px 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.75;
+    margin: 0 0 14px 0;
+    color: var(--text);
+  }
+  
+  .dropcap::first-letter {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 48px;
+    font-weight: 700;
+    float: left;
+    line-height: 0.8;
+    margin: 4px 10px 0 0;
+    color: var(--accent);
+  }
+  
+  .highlight {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 28px 0;
+    padding: 18px 22px;
+    border-left: 3px solid var(--accent);
+    background: rgba(107, 78, 61, 0.05);
+    line-height: 1.5;
+  }
+  
+  .artist {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 24px 0 4px 0;
+  }
+  
+  .artist-sub {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15px;
+    color: var(--accent);
+    font-style: italic;
+    margin: 0 0 10px 0;
+  }
+  
+  .artist-desc {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+    color: var(--text);
+  }
+  
+  blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: rgba(107, 78, 61, 0.06);
+    border-left: 3px solid var(--accent);
+  }
+  
+  blockquote p {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+    color: var(--text-light);
+  }
+  
+  .divider {
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.2;
+    margin: 32px 0;
+  }
+  
+  .key-works {
+    background: rgba(107, 78, 61, 0.04);
+    padding: 14px 20px;
+    margin: 14px 0 18px 0;
+    border-radius: 8px;
+  }
+  
+  .key-works .label {
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .key-works ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+    list-style: none;
+  }
+  
+  .key-works li {
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 4px 0;
+    color: var(--text);
+    position: relative;
+  }
+  
+  .key-works li::before {
+    content: "◆";
+    position: absolute;
+    left: -16px;
+    color: var(--accent);
+    font-size: 8px;
+    top: 4px;
+  }
+  
+  .footer-info {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(107, 78, 61, 0.2);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--text-light);
+    letter-spacing: 0.05em;
+  }
+  
+  .section-intro {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 0 18px 0;
+    color: var(--text);
+    font-style: italic;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="card-container">
+  <div class="title-area">
+    <h1>西方绘画艺术简史</h1>
+    <p class="subtitle">从洞穴壁画到当代艺术，六千年的视觉革命 · 30+ 位大师与他们的时代</p>
+  </div>
+  
+  <p class="dropcap">西方绘画的历史，不是技术的线性进步，而是一场关于"看的方式"的不断革命。从拉斯科洞穴的野牛，到毕加索的《格尔尼卡》，每一次风格的断裂，都是人类对世界理解方式的颠覆。绘画，是人类用眼睛思考的方式。</p>
+  
+  <div class="divider"></div>
+  
+  <h2 class="era-title"><span class="era-num">I</span> 古代与中世纪</h2>
+  <p class="period">公元前 30000 年 — 公元 1300 年</p>
+  
+  <p>最早的绘画不是为了审美，而是为了生存和巫术。拉斯科洞穴（Lascaux，法国，约公元前 15000 年）中的野牛和马，是已知最早的人类视觉表达——画在岩壁上，仿佛画上去就能捕获猎物。阿尔塔米拉洞穴（Altamira，西班牙）的野牛则展现了惊人的动态感，两万年前的画家已经理解了奔跑的节奏。</p>
+  
+  <p>古埃及人建立了最早的绘画程式：侧面像与正面眼的混合。这种程式统治了近三千年，不是因为技巧不足，而是因为绘画的目的不是"看"，而是"存在"——在墓室中画的仆人，就是为了在来世继续服务主人。</p>
+  
+  <div class="key-works">
+    <p class="label">关键作品</p>
+    <ul>
+      <li>拉斯科洞穴壁画（法国，约前 15000 年）</li>
+      <li>阿尔塔米拉洞穴壁画（西班牙，约前 14000 年）</li>
+      <li>埃及墓室壁画·内巴蒙狩猎图（底比斯，约前 1400 年）</li>
+      <li>庞贝壁画·密仪 villa 壁画（意大利，约前 50 年—公元 79 年）</li>
+      <li>法尤姆肖像（埃及，公元 1—3 世纪）</li>
+    </ul>
+  </div>
+  
+  <p>古希腊罗马时期，绘画开始追求自然主义。庞贝古城的壁画证明，两千年前的画家已经掌握了透视和光影——《密仪 villa》中的建筑空间几乎达到了文艺复兴的水平。法尤姆肖像则融合了埃及的墓葬文化和希腊的写实技巧，是已知最早的肖像画传统。</p>
+  
+  <p>中世纪的基督教艺术又回到了程式化。绘画的目的是传达神学真理，而非再现自然。拜占庭的圣像画用金色背景象征神性的光辉，人物的眼神凝视永恒，而非尘世。这不是技术的倒退，而是信仰的视觉化。</p>
+  
+  <div class="divider"></div>
+  
+  <h2 class="era-title"><span class="era-num">II</span> 文艺复兴</h2>
+  <p class="period">1300 年 — 1600 年</p>
+  
+  <div class="highlight">这是一场关于"看"的革命：绘画第一次试图在二维平面上重建三维世界。透视法、解剖学、光影——人类用数学和科学武装了艺术。</div>
+  
+  <p class="section-intro">文艺复兴不是突然降临的，它是一百年间无数艺术家接力完成的奇迹。</p>
+  
+  <div class="artist">乔托（Giotto）</div>
+  <p class="artist-sub">1266/67—1337 · 意大利佛罗伦萨</p>
+  <p class="artist-desc">文艺复兴的先驱。在帕多瓦的斯克罗维尼礼拜堂，他第一次给人物赋予了重量和情感。他画中的圣母不再是平面的符号，而是一个有血有肉的母亲，抱着死去的孩子，悲痛从画面中溢出。瓦萨里称他为"绘画的再生之父"。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《哀悼基督》（斯克罗维尼礼拜堂，1303—1305）</li>
+      <li>《圣方济各接受圣痕》（约 1295—1300）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">马萨乔（Masaccio）</div>
+  <p class="artist-sub">1401—1428 · 意大利佛罗伦萨</p>
+  <p class="artist-desc">26 岁去世，却改变了绘画的一切。他发现了线性透视——在《圣三位一体》中，他创造了一个数学上精确的三维空间，观者仿佛站在一个真实的壁龛前。他的《纳税银》将人物置于真实的山水中，光影统一，这是绘画史上的第一次。</p>
+  
+  <div class="artist">列奥纳多·达·芬奇（Leonardo da Vinci）</div>
+  <p class="artist-sub">1452—1519 · 意大利</p>
+  <p class="artist-desc">文艺复兴的终极通才。他的绘画不是对自然的模仿，而是对自然规律的理解和再造。《最后的晚餐》中，十三个人物的手势、表情和心理状态，被精确地编排在一场戏剧性的瞬间里——犹大的手正伸向面包，而基督的手却平静地摊开。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《蒙娜丽莎》（约 1503—1519）—— sfumato 的极致</li>
+      <li>《最后的晚餐》（1495—1498）—— 心理戏剧的巅峰</li>
+      <li>《岩间圣母》（1483—1486）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">米开朗基罗（Michelangelo）</div>
+  <p class="artist-sub">1475—1564 · 意大利</p>
+  <p class="artist-desc">他将自己定义为雕塑家，却在西斯廷天顶画中完成了绘画史上最大胆的壮举——300 多个人物，4 年的独自工作，在 20 米高的拱顶上，他创造了人类身体的神性赞歌。《创造亚当》中两个指尖即将接触的瞬间，是整个西方艺术中最著名的图像之一。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>西斯廷天顶画（1508—1512）</li>
+      <li>《最后的审判》（1536—1541）</li>
+      <li>《圣家族》（1504—1505）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">拉斐尔（Raphael）</div>
+  <p class="artist-sub">1483—1520 · 意大利乌尔比诺</p>
+  <p class="artist-desc">文艺复兴和谐美的化身。37 岁英年早逝，却留下了《雅典学院》——这幅画将柏拉图、亚里士多德和同时代的达·芬奇、米开朗基罗画在一起，是文艺复兴人文主义理想的视觉宣言。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《雅典学院》（1509—1511）</li>
+      <li>《西斯廷圣母》（1512）</li>
+      <li>《椅中圣母》（1514）</li>
+    </ul>
+  </div>
+  
+  <p>北方文艺复兴同样辉煌，但走了另一条路——不是理想化的美，而是细节的极致。</p>
+  
+  <div class="artist">扬·凡·艾克（Jan van Eyck）</div>
+  <p class="artist-sub">约 1390—1441 · 佛兰德斯</p>
+  <p class="artist-desc">油画技法的发明者（或至少是完善者）。《阿尔诺芬尼夫妇像》中，每一个物件——吊灯上的蜡烛、地毯上的花纹、狗身上的毛——都被精确到令人不安的程度。画中的镜子反射了整个房间，包括画家本人，这是对"观看"本身的元思考。</p>
+  
+  <div class="artist">阿尔布雷希特·丢勒（Albrecht Dürer）</div>
+  <p class="artist-sub">1471—1528 · 德国纽伦堡</p>
+  <p class="artist-desc">北方的达·芬奇。他将数学、科学和比例引入了艺术，《忧郁 I》中那个沉思的天使周围堆满了几何工具和时钟，是人类知识焦虑的视觉化。他的木刻和铜版画至今无人超越。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《忧郁 I》（1514）</li>
+      <li>《四使徒》（1526）</li>
+      <li>《自画像》（1500）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">提香（Titian）</div>
+  <p class="artist-sub">约 1488/90—1576 · 意大利威尼斯</p>
+  <p class="artist-desc">威尼斯画派的巅峰。他解放了色彩——在提香之前，色彩只是线条的填充；在提香之后，色彩本身就成为了表达的手段。他晚年的笔触越来越自由，《剥马尔斯皮的惩罚》中，颜料几乎被直接甩在画布上，预示了印象派的到来。</p>
+  
+  <div class="divider"></div>
+  
+  <h2 class="era-title"><span class="era-num">III</span> 巴洛克与洛可可</h2>
+  <p class="period">1600 年 — 1780 年</p>
+  
+  <div class="highlight">巴洛克是光的戏剧。洛可可是欲望的轻盈。两个世纪，两种截然不同的看世界的方式。</div>
+  
+  <div class="artist">卡拉瓦乔（Caravaggio）</div>
+  <p class="artist-sub">1571—1610 · 意大利</p>
+  <p class="artist-desc">艺术史上的第一个"坏男孩"——杀人犯、逃亡者、天才。他用强烈的明暗对比（chiaroscuro）创造了前所未有的视觉冲击力。他的画中，光线不是自然的，而是舞台的——一束光从黑暗中劈下来，照亮了圣马太的脸。他不用理想化的模特，而用街头的普通人做圣徒，这激怒了教会。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《圣马太蒙召》（1599—1600）</li>
+      <li>《以马忤斯的晚餐》（1601）</li>
+      <li>《大卫与歌利亚的头》（1609—1610）—— 画中歌利亚的头就是自画像</li>
+    </ul>
+  </div>
+  
+  <div class="artist">伦勃朗（Rembrandt）</div>
+  <p class="artist-sub">1606—1669 · 荷兰阿姆斯特丹</p>
+  <p class="artist-desc">他将光的使用推向了心理学的高度。《夜巡》中，光不仅是照明，更是叙事——谁在光中，谁在影里，决定了谁是主角。他晚年破产后画的自画像系列，是艺术史上最深刻的人类自我凝视——从意气风发到衰老、贫穷、孤独，每一张都是一次灵魂的裸露。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《夜巡》（1642）</li>
+      <li>《自画像》系列（约 80 幅，贯穿一生）</li>
+      <li>《浪子回头》（1668）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">委拉斯开兹（Velázquez）</div>
+  <p class="artist-sub">1599—1660 · 西班牙</p>
+  <p class="artist-desc">《宫娥》（Las Meninas）是绘画史上最复杂的图像之一——你在看画，画中的人在看你，而画家在画什么？镜子中的国王和王后是谁在看？福柯说这幅画宣告了"表象的终结"——绘画不再是关于世界的窗口，而是关于"看"本身的反思。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《宫娥》（1656）</li>
+      <li>《教皇英诺森十世》（1650）</li>
+      <li>《纺织女》（1657）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">彼得·保罗·鲁本斯（Peter Paul Rubens）</div>
+  <p class="artist-sub">1577—1640 · 佛兰德斯</p>
+  <p class="artist-desc">巴洛克的力量和丰饶。他的画中充满了运动、肉欲和活力。他是外交家、学者、画家——一个真正的文艺复兴式人物活在巴洛克时代。</p>
+  
+  <p>到了 18 世纪，洛可可风格兴起。华托（Watteau）用梦幻的色彩描绘贵族游乐，布歇（Boucher）用粉嫩的肌肤填充神话场景，弗拉戈纳尔（Fragonard）的《秋千》则是轻浮和享乐的极致。这是对巴洛克沉重感的反叛，也是对旧制度最后辉煌的歌颂——十年后，法国大革命将这一切一扫而空。</p>
+  
+  <div class="divider"></div>
+  
+  <h2 class="era-title"><span class="era-num">IV</span> 新古典主义与浪漫主义</h2>
+  <p class="period">1780 年 — 1850 年</p>
+  
+  <div class="highlight">理性与情感，秩序与混乱，两条路，两种看世界的方式。启蒙运动的遗产与反叛。</div>
+  
+  <div class="artist">雅克-路易·大卫（Jacques-Louis David）</div>
+  <p class="artist-sub">1748—1825 · 法国</p>
+  <p class="artist-desc">新古典主义的旗手，法国大革命的视觉记录者。《荷拉斯兄弟之誓》中，三个兄弟向父亲宣誓为国捐躯，而女人们则悲痛欲绝——这是共和国美德与个人情感的冲突。大卫后来成为拿破仑的御用画家，《拿破仑加冕》是权力最壮观的视觉宣告。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《荷拉斯兄弟之誓》（1784）</li>
+      <li>《马拉之死》（1793）</li>
+      <li>《拿破仑加冕》（1805—1807）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">让·奥古斯特·多米尼克·安格尔（Ingres）</div>
+  <p class="artist-sub">1780—1867 · 法国</p>
+  <p class="artist-desc">线条的绝对主义者。他认为素描是一切，色彩只是装饰。《大宫女》中那条多出的脊椎骨——解剖学上的错误，却是美学上的刻意——让身体呈现出一种超自然的优雅。德拉克洛瓦嘲笑他"像钟表一样精确"，而这恰恰是他的力量所在。</p>
+  
+  <div class="artist">弗朗西斯科·戈雅（Francisco Goya）</div>
+  <p class="artist-sub">1746—1828 · 西班牙</p>
+  <p class="artist-desc">从宫廷画家到黑暗的先知。早年的《穿衣的玛哈》和《裸体的玛哈》充满感官享乐；但拿破仑入侵西班牙后，一切都变了。《1808 年 5 月 3 日》是对战争暴行的愤怒控诉——士兵面无表情地举枪，而被处决者张开双臂，像基督一样。晚年的《黑画》系列则是对人类疯狂的绝望凝视——《农神吞噬其子》中，那个吞噬自己孩子的怪物，就是戈雅眼中的人类。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《1808 年 5 月 3 日》（1814）</li>
+      <li>《农神吞噬其子》（1819—1823）</li>
+      <li>《狂想曲》系列（1799）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">欧仁·德拉克洛瓦（Eugène Delacroix）</div>
+  <p class="artist-sub">1798—1863 · 法国</p>
+  <p class="artist-desc">浪漫主义的最后一位大师。《自由引导人民》中，自由女神裸露着乳房，脚踏尸体，手举三色旗——这是革命最浪漫的视觉宣言。波德莱尔说他是"最后的伟大画家"。</p>
+  
+  <div class="divider"></div>
+  
+  <h2 class="era-title"><span class="era-num">V</span> 印象派与现代主义</h2>
+  <p class="period">1860 年 — 1960 年</p>
+  
+  <div class="highlight">莫奈画的是光本身，不是光照射的物体。这是绘画史上最彻底的断裂——绘画不再是"画什么"，而是"怎么看"。</div>
+  
+  <div class="artist">克劳德·莫奈（Claude Monet）</div>
+  <p class="artist-sub">1840—1926 · 法国</p>
+  <p class="artist-desc">印象派的旗手。1874 年，他的《印象·日出》被批评家嘲笑为"未完成的草图"——"印象派"这个名号由此诞生。但他不是在画物体，他是在画光。《干草垛》系列（1890—1891）证明了：同一个物体在不同光线下，完全是另一个东西。晚年的《睡莲》系列，将光、水、色彩融为一幅巨大的视觉诗篇，几乎预示了抽象表现主义的到来。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《印象·日出》（1872）—— 印象派由此得名</li>
+      <li>《干草垛》系列（1890—1891）</li>
+      <li>《睡莲》系列（1897—1926）</li>
+      <li>《鲁昂大教堂》系列（1892—1893）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">埃德加·德加（Edgar Degas）</div>
+  <p class="artist-sub">1834—1917 · 法国</p>
+  <p class="artist-desc">他拒绝被称为印象派画家。他的《舞蹈课》捕捉了芭蕾舞者在训练中的疲惫——不是舞台上的优雅，而是幕后的辛苦。他对运动和瞬间的捕捉，受到了摄影的影响。</p>
+  
+  <div class="artist">皮埃尔-奥古斯特·雷诺阿（Pierre-Auguste Renoir）</div>
+  <p class="artist-sub">1841—1919 · 法国</p>
+  <p class="artist-desc">印象派中最温暖的眼睛。《煎饼磨坊的舞会》中，阳光穿过树叶洒在舞者身上，每一个光斑都是活的。他晚年患类风湿关节炎后，画笔绑在手上继续作画——《大浴女》系列是他对女性身体最后的礼赞。</p>
+  
+  <div class="artist">保罗·塞尚（Paul Cézanne）</div>
+  <p class="artist-sub">1839—1906 · 法国</p>
+  <p class="artist-desc">"现代绘画之父"。他从印象派出发，走向了更深处——他发现了自然的几何结构。他的圣维克多山画了近百次，每一次都在寻找形式和色彩之间的平衡。他的静物画看似笨拙，却暗含着对形式的革命性理解。毕加索说："塞尚是我们所有人的父亲。"</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《圣维克多山》系列（1882—1906）</li>
+      <li>《玩牌者》（1890—1895）</li>
+      <li>《苹果与橙子》（1899）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">文森特·梵高（Vincent van Gogh）</div>
+  <p class="artist-sub">1853—1890 · 荷兰</p>
+  <p class="artist-desc">绘画不是记录自然，而是表达内心。《星夜》中旋转的天空，不是眼睛看到的，是灵魂感受到的。他一生只卖出一幅画，却在死后成为了最受欢迎的画家。他的每一笔都是痛苦的燃烧——《自画像》中那双眼睛，看透了人间的荒凉。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《星夜》（1889）</li>
+      <li>《向日葵》系列（1888）</li>
+      <li>《自画像》系列（约 35 幅）</li>
+      <li>《鸢尾花》（1889）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">保罗·高更（Paul Gauguin）</div>
+  <p class="artist-sub">1848—1903 · 法国</p>
+  <p class="artist-desc">他逃离了巴黎的文明，在塔希提寻找原始的色彩和纯真的生活。他的画中没有透视，没有阴影，只有平面化的色块——这是对西方绘画传统的彻底反叛。</p>
+  
+  <div class="artist">亨利·马蒂斯（Henri Matisse）</div>
+  <p class="artist-sub">1869—1954 · 法国</p>
+  <p class="artist-desc">色彩的解放者。野兽派的名字来自他——1905 年，一群画家用狂野的色彩震惊了巴黎沙龙。"精确不等于真实"，马蒂斯说。晚年他因癌症卧床，却用剪纸继续创作——《爵士》系列是色彩和形式的终极简化。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《舞蹈》（1910）</li>
+      <li>《红色画室》（1911）</li>
+      <li>《爵士》系列（1947）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">巴勃罗·毕加索（Pablo Picasso）</div>
+  <p class="artist-sub">1881—1973 · 西班牙</p>
+  <p class="artist-desc">20 世纪最重要的画家。他与布拉克一起发明了立体主义——将物体分解为几何面，从多个视角同时呈现。《亚威农少女》（1907）炸毁了五百年来的透视传统。他的蓝色时期、玫瑰色时期、非洲时期、立体主义时期……他的一生就是一部现代艺术史。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《亚威农少女》（1907）—— 立体主义的起点</li>
+      <li>《格尔尼卡》（1937）—— 对战争暴行的控诉</li>
+      <li>《梦》（1932）</li>
+      <li>《哭泣的女人》（1937）</li>
+    </ul>
+  </div>
+  
+  <div class="artist">瓦西里·康定斯基（Wassily Kandinsky）</div>
+  <p class="artist-sub">1866—1944 · 俄罗斯</p>
+  <p class="artist-desc">抽象绘画的发明者。1910 年，他画出了第一幅完全没有具象内容的画。他说色彩和形式本身就有音乐性——红色像号角，蓝色像管风琴。《构成》系列将绘画变成了纯粹的视觉交响乐。</p>
+  
+  <div class="artist">马克·罗斯科（Mark Rothko）</div>
+  <p class="artist-sub">1903—1970 · 美国</p>
+  <p class="artist-desc">抽象表现主义的另一极。他的巨幅色块画——两个或三个矩形色块悬浮在画布上——看似简单，却蕴含着深沉的情感力量。他要求观众在近距离观看，让色彩"包裹"你。他的画是关于悲剧、狂喜和命运的。</p>
+  
+  <div class="divider"></div>
+  
+  <h2 class="era-title"><span class="era-num">VI</span> 当代与未来</h2>
+  <p class="period">1960 年至今</p>
+  
+  <p>安迪·沃霍尔将汤罐头和玛丽莲·梦露变成了艺术——波普艺术宣告：消费文化本身就是美学。"在未来，每个人都有十五分钟成名的时间。"他说这句话时，预言了社交媒体时代的到来。</p>
+  
+  <div class="artist">安迪·沃霍尔（Andy Warhol）</div>
+  <p class="artist-sub">1928—1987 · 美国</p>
+  <p class="artist-desc">他将丝网印刷引入艺术，消解了"原创"的概念。重复的玛丽莲·梦露——不是一个人的肖像，而是名望本身的解剖。他的工厂（The Factory）是艺术与商业、精英与大众之间的模糊地带。</p>
+  
+  <div class="key-works">
+    <p class="label">代表作</p>
+    <ul>
+      <li>《金宝汤罐头》（1962）</li>
+      <li>《玛丽莲·梦露》系列（1962）</li>
+      <li>《死亡与灾难》系列（1962—1963）</li>
+    </ul>
+  </div>
+  
+  <p>杰克逊·波洛克（Jackson Pollock）将颜料滴洒在画布上——行动绘画宣告：绘画的过程就是作品本身。威廉·德·库宁（Willem de Kooning）用暴烈的笔触撕裂画面。马克·罗斯科用沉静的色块让你面对永恒。</p>
+  
+  <p>极简主义（Minimalism）剥去了所有叙事——唐纳德·贾德（Donald Judd）的盒子、丹·弗莱文（Dan Flavin）的荧光灯管，告诉你：物体本身就是全部。</p>
+  
+  <p>概念艺术（Conceptual Art）更进一步——杜尚（Marcel Duchamp）在 1917 年将小便池命名为《泉》送上展览，宣告：艺术不取决于制作，而取决于选择。约瑟夫·科苏斯（Joseph Kosuth）的《一把和三把椅子》——实物、照片和定义——追问：什么是真实？</p>
+  
+  <p>到了今天，当 AI 可以生成任何风格的图像时，绘画的意义反而变得更加纯粹——不是技术，不是再现，而是"人之所以为人"的那部分：脆弱、偏见、不完美，以及面对虚无时依然想要表达的冲动。</p>
+  
+  <div class="highlight" style="margin-top: 32px;">绘画的六千年，不是从粗糙到精致，而是从"画什么"到"为什么画"的不断追问。每一次断裂，都是对"什么是绘画"的重新回答。而这个问题，永远不会有最终答案。</div>
+  
+  <div class="footer-info">
+    <span>归藏卡片 · ljg-card</span>
+    <span>西方绘画艺术简史</span>
+  </div>
+</div>
+</body>
+</html>
