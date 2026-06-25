@@ -1,3 +1,10 @@
+---
+layout: default
+title: 怎么玩 just-the-docs
+parent: AI 实战笔记      # 极其关键！名字必须和上面的顶级目录 title 完全一致
+nav_order: 2                # 在子目录里的排序
+---
+
 **`just-the-docs`** 是 GitHub 上极其火爆的一个 **Jekyll 主题**（拥有 10k+ Stars）。
 
 它的核心定位不是那种花哨的“日记型”个人博客，而是一个**极其现代、清爽、专注于文档和知识库管理（Documentation Theme）**的专业主题。如果你想用 GitHub 做一个**个人的技术笔记库、项目文档、或者结构化的维基百科（Wiki）**，选它堪称完美。
