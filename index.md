@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 🏠 首页
-nav_order: 1
+nav_order: 2
 ---
 
 # 欢迎来到 Patdelphi 的知识库
