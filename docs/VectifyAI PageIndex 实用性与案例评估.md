@@ -1,3 +1,11 @@
+---
+layout: default
+title: 基于结构化推理的无向量检索框架 PageIndex 实用性深度评估报告
+parent: 🤖 AI 实战笔记
+nav_order: 5
+---
+
+
 # **基于结构化推理的无向量检索框架 PageIndex 实用性深度评估报告**
 
 ## **PageIndex 的技术起源与核心设计哲学**
