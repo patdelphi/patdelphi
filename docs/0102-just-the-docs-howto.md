@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 怎么玩 just-the-docs
-parent: AI 实战笔记      # 极其关键！名字必须和上面的顶级目录 title 完全一致
+parent: 🤖 AI 实战笔记      # 极其关键！名字必须和上面的顶级目录 title 完全一致
 nav_order: 2                # 在子目录里的排序
 ---
 
